@@ -7,7 +7,8 @@ mongoose.connection.on("error",function(e){console.error(e);});
 app.use(express.urlencoded());
 
 // definimos el schema
-var schema = mongoose.Schema({date:Date,name:String});
+var schema = mongoose.Schema({date:Date,
+                              name:String});
 // definimos el modelo
 var Visitor = mongoose.model("Visitor", schema);
 
